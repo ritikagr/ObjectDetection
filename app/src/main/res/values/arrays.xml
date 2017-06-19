@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="learning_mode_names">
+		<item>Low profile</item>
+		<item>High profile</item>
+		<item>High profileEx</item>
+	</string-array>
+	<string-array name="learning_mode_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="feature_type_names">
+		<item>Blob</item>
+		<item>Shape</item>
+		<item>Combined</item>
+	</string-array>
+	<string-array name="feature_type_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="recognition_speed_names">
+		<item>Low</item>
+		<item>High</item>
+	</string-array>
+	<string-array name="recognition_speed_values">
+		<item>0</item>
+		<item>256</item>
+	</string-array>
+	<string-array name="recognition_transform_type_names">
+		<item>Auto</item>
+		<item>Perspective</item>
+		<item>Affine</item>
+		<item>Similarity</item>
+	</string-array>
+	<string-array name="recognition_transform_type_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+</resources>

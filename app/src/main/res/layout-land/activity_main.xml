@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" >
+
+	<com.neurotec.samples.sentisight.widget.LabeledShapeView
+		android:id="@+id/recognition_shape_view"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0" />
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		style="@style/controls_layout_land">
+
+		<Button
+			android:id="@+id/button_select_image"
+			style="@style/controls_button_land"
+			android:text="@string/msg_select_image"/>
+
+		<Button
+			android:id="@+id/button_learn"
+			style="@style/controls_button_land"
+			android:text="@string/msg_learn"/>
+
+		<Button
+			android:id="@+id/button_recognise"
+			style="@style/controls_button_land"
+			android:text="@string/msg_recognise"/>
+
+	</LinearLayout>
+
+</LinearLayout>

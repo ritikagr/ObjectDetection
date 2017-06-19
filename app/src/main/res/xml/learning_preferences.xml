@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:seekbar="http://seekbar.com" >
+	<CheckBoxPreference
+			android:key="learning_enable_mask_enhancements"
+			android:title="@string/preferences_learning_enable_mask_enhancements"
+			android:defaultValue="true"/>
+
+	<ListPreference
+			android:key="learning_mode"
+			android:title="@string/preferences_learning_mode"
+			android:entryValues="@array/learning_mode_values"
+			android:entries="@array/learning_mode_names"
+			android:defaultValue="1"/>
+
+	<ListPreference
+			android:key="learning_feature_type"
+			android:title="@string/preferences_learning_feature_type"
+			android:entryValues="@array/feature_type_values"
+			android:entries="@array/feature_type_names"
+			android:defaultValue="1"
+			/>
+
+	<com.codeflight.ritik.objectdetection.app.preference.SeekBarPreference
+			android:key="learning_shape_scaling_level"
+			android:title="@string/preferences_learning_shape_scaling_level"
+			android:max="32768"
+			seekbar:min="0"
+			android:defaultValue="0"/>
+
+	<EditTextPreference
+			android:key="learning_image_rescale_factor"
+			android:title="@string/preferences_learning_image_rescale_factor"
+			android:numeric="decimal"
+			android:defaultValue="1" />
+
+	<CheckBoxPreference
+		android:key="learning_use_color_information"
+		android:title="@string/preferences_learning_use_color_information"
+		android:defaultValue="true" />
+
+	<Preference
+		android:key="set_default_learning_preferences"
+		android:title="@string/preferences_reset_to_defaults"
+		android:summary="@string/preferences_reset_to_defaults_summary" />
+
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="?android:attr/listPreferredItemHeight"
+	android:padding="6dip">
+
+	<ImageView
+		android:id="@+id/db_view_image"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:layout_marginRight="6dip"
+		android:scaleType="centerCrop"
+		android:adjustViewBounds="true" />
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent">
+		<TextView
+			android:id="@+id/db_view_name"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center_vertical"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+		/>
+		<TextView
+			android:id="@+id/db_view_images_number"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+		/>
+	</LinearLayout>
+</LinearLayout>

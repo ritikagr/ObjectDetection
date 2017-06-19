@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:seekbar="http://seekbar.com" >
+	<ListPreference
+			android:key="recognition_feature_type"
+			android:title="@string/preferences_recognition_feature_type"
+			android:entryValues="@array/feature_type_values"
+			android:entries="@array/feature_type_names"
+			android:defaultValue="1" />
+
+	<com.codeflight.ritik.objectdetection.app.preference.SeekBarPreference
+			android:key="recognition_shape_scaling_level"
+			android:title="@string/preferences_recognition_shape_scaling_level"
+			android:max="32768"
+			seekbar:min="0"
+			android:defaultValue="0" />
+
+	<EditTextPreference
+			android:key="recognition_image_rescale_factor"
+			android:title="@string/preferences_recognition_image_rescale_factor"
+			android:numeric="decimal"
+			android:defaultValue="1" />
+
+	<com.codeflight.ritik.objectdetection.app.preference.SeekBarPreference
+			android:key="recognition_matching_threshold"
+			android:title="@string/preferences_recognition_matching_threshold"
+			android:max="3000000"
+			seekbar:min="0"
+			android:defaultValue="100000" />
+
+	<ListPreference
+			android:key="recognition_speed"
+			android:title="@string/preferences_recognition_speed"
+			android:entryValues="@array/recognition_speed_values"
+			android:entries="@array/recognition_speed_names"
+			android:defaultValue="0" />
+
+	<ListPreference
+			android:key="recognition_transform_type"
+			android:title="@string/preferences_recognition_transform_type"
+			android:entryValues="@array/recognition_transform_type_values"
+			android:entries="@array/recognition_transform_type_names"
+			android:defaultValue="0" />
+
+	<CheckBoxPreference
+		android:key="recognition_use_color_information"
+		android:title="@string/preferences_recognition_use_color_information"
+		android:defaultValue="true" />
+
+	<CheckBoxPreference
+		android:key="recognition_use_auto_recognise"
+		android:title="@string/preferences_recognition_use_auto_recognise"
+		android:defaultValue="true" />
+
+	<Preference
+		android:key="set_default_recognition_preferences"
+		android:title="@string/preferences_reset_to_defaults"
+		android:summary="@string/preferences_reset_to_defaults_summary" />
+
+</PreferenceScreen>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal" >
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		style="@style/controls_layout_land">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<com.neurotec.samples.sentisight.widget.EditShapeView
+				android:id="@+id/shape_edit_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:clickable="true"
+				android:layout_weight="1.0" />
+			<LinearLayout
+				style="@style/controls_layout_land">
+
+				<Button
+					android:id="@+id/button_return"
+					style="@style/controls_button_land"
+					android:text="@string/msg_return" />
+
+				<Button
+					android:id="@+id/button_undo"
+					style="@style/controls_button_land"
+					android:text="@string/msg_undo" />
+
+				<Button
+					android:id="@+id/button_clear"
+					style="@style/controls_button_land"
+					android:text="@string/msg_clear" />
+
+				<Button
+					android:id="@+id/button_add"
+					style="@style/controls_button_land"
+					android:text="@string/msg_add" />
+
+			</LinearLayout>
+		</LinearLayout>
+		<TextView
+			android:id="@+id/label_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Status"
+			android:layout_gravity="bottom|center"/>
+	</FrameLayout>
+
+</LinearLayout>

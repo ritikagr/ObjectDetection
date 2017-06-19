@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.codeflight.ritik.objectdetection.app">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_OWNER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_OWNER_DATA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera2"
+        android:required="true" />
+
+    <application
+        android:name=".SentiSightApplication"
+        package="com.codeflight.ritik.objectdetection.app"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".app.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".app.RecognitionActivity"
+            android:label="@string/title_activity_recognition"
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codeflight.ritik.objectdetection.app.app.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".app.DetectionActivity"
+            android:label="@string/title_activity_detection"
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codeflight.ritik.objectdetection.app.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".app.LearningActivity"
+            android:label="@string/title_activity_learning"
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codeflight.ritik.objectdetection.app.app.MainActivity" />
+        </activity>
+        <activity android:name=".database.DBEditorActivity" />
+        <activity android:name=".database.ModelPickerActivity" />
+        <activity android:name=".database.ModelViewActivity" />
+        <activity
+            android:name=".preference.LearningPreferences"
+            android:label="Learning Preference"
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codeflight.ritik.objectdetection.app.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".preference.RecognitionPreferences"
+            android:label="Recognition Preference"
+            android:parentActivityName=".app.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.codeflight.ritik.objectdetection.app.app.MainActivity" />
+        </activity>
+
+    </application>
+
+</manifest>
