@@ -1,4 +1,6 @@
 # ObjectDetection
+#Image Analytics for stock counting and Brand Presence at Modern trade stores
+
 Android application for object detection and localization using SentiSight SDK provided by NeuroTechnology
 
 SentiSight SDK , provided by NeuroTechnology, provides computer vision based object recognition for many 
