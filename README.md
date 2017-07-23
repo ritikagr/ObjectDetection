@@ -1,5 +1,4 @@
-# ObjectDetection
-#Image Analytics for stock counting and Brand Presence at Modern trade stores
+# Image Analytics for stock counting and Brand Presence at Modern trade stores
 
 Android application for object detection and localization using SentiSight SDK provided by NeuroTechnology
 
